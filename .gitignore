@@ -1,0 +1,86 @@
+# Kotlin / Gradle
+.gradle/
+.gradle-cache/
+**/build/
+.kotlinc/
+konan/
+
+# Android / IntelliJ
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# iOS / Xcode
+**/DerivedData/
+iosApp/DerivedData/
+*.xcuserstate
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcarchive
+
+# Xcode projects
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# Swift Package Manager
+.swiftpm/
+iosApp/.build/
+
+# CocoaPods
+Pods/
+!Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Certificates / provisioning
+*.mobileprovision
+*.provisionprofile
+*.cer
+*.p12
+
+# Node / Web
+node_modules/
+
+# Tests / coverage
+**/test-results/
+**/coverage/
+*.exec
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Secrets / local config
+.env
+.env.*
+*.keystore
+*.jks
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compose Desktop
+composeApp/build/
+
+# Backend / Ktor
+.build/
+out/
