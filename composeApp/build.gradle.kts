@@ -71,6 +71,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation("androidx.compose.ui:ui-text-google-fonts:1.6.0")
 
             // Interface
             implementation("io.ktor:ktor-client-core:3.2.2")

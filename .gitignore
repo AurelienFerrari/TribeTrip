@@ -2,6 +2,10 @@
 .gradle/
 .gradle-cache/
 **/build/
+build/
+.kotlin/
+.kotlin/metadata/
+kotlinTransformedMetadataLibraries/
 .kotlinc/
 konan/
 
