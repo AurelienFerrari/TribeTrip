@@ -1,0 +1,15 @@
+# Active when SPRING_PROFILES_ACTIVE=dev (tribetrip-backend-dev on Render).
+# DATABASE_URL must point to the Neon "dev" branch connection string — see backend/DEPLOYMENT.md.
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    com.example.tribetrip.backend: DEBUG
+    org.hibernate.SQL: DEBUG
+
+jwt:
+  secret: ${JWT_SECRET}

@@ -1,0 +1,17 @@
+# Active when SPRING_PROFILES_ACTIVE=prod (tribetrip-backend-prod on Render).
+# DATABASE_URL must point to the Neon production branch connection string — see backend/DEPLOYMENT.md.
+spring:
+  jpa:
+    hibernate:
+      # Never auto-alter the prod schema. Once real migrations are needed, introduce
+      # Flyway/Liquibase rather than raising this to "update".
+      ddl-auto: validate
+    show-sql: false
+
+logging:
+  level:
+    root: WARN
+    com.example.tribetrip.backend: INFO
+
+jwt:
+  secret: ${JWT_SECRET}

@@ -1,0 +1,22 @@
+# Keeps the Docker build context (repo root — see render.yaml dockerContext) small and fast.
+# backend/Dockerfile only ever COPYs backend/** plus the root wrapper/settings/version catalog
+# and composeApp/build.gradle.kts (needed so settings.gradle.kts resolves, never built) — none
+# of the paths below are referenced by any COPY, so excluding them is safe.
+
+.git
+.idea
+.gradle
+.kotlin
+**/build/
+*.iml
+local.properties
+
+iosApp
+composeApp/src
+
+node_modules
+*.xcodeproj
+xcuserdata
+captures
+.externalNativeBuild
+.cxx
